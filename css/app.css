@@ -24,3 +24,42 @@ figure > img {
 	display: block;
 	width: 100%;
 }
+
+#app {
+	height: 100vh;
+    overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* app__toolbar */
+.app__toolbar {
+
+}
+
+
+/* app__content */
+.app__content {
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+/* DEBUG */
+#app {
+    background-color: aqua;
+    padding: 10px;
+}
+
+.debug .app__toolbar,
+.debug .app__content {
+	border: 2px solid red;
+	padding: 10px;
+}
+
+.debug .app__sidebar,
+.debug .app__main-content {
+	border: 2px solid violet;
+	padding: 10px;
+}
