@@ -15,15 +15,55 @@
 
         <!-- app__toolbar -->
         <aside class="app__toolbar">
+
+            <!-- logo -->
             <div class="logo-wrapper flex-center">
                 <div class="item__icon">
                     <img class="logo-lg" src="./img/logo.svg" alt="" />
                     <img class="logo-sm" src="./img/mobile-logo.png" alt="" />
                 </div>
             </div>
+
+            <!-- search-bar -->
             <form class="d-flex flex-grow-1" role="search">
                 <input class="form-control ms-3 me-3" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-              </form>
+            </form>
+
+            <!-- toolbar-menu -->
+            <nav class="toolbar-menu ">
+                <ul class="toolbar-menu__menu tm-responsive">
+                    <li class="menu__item">
+                        <a href="#" class="responsive-item">
+                            <span class="item__icon">
+                                <i class="fa-solid fa-list"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="responsive-item">
+                            <span class="item__icon">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="responsive-item">
+                            <span class="item__icon">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="toolbar-menu__menu bell">
+                    <li class="menu__item">
+                        <a href="#" class="responsive-item">
+                            <span class="item__icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
         </aside>
 
