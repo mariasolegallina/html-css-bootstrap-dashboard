@@ -32,9 +32,17 @@ figure > img {
 	flex-direction: column;
 }
 
+:root {
+    --d-blue: #051E34;
+    --l-blue: #1B72E8;
+    --grey-bg: #F7F7F7;
+    --greytxt: #393939;
+    --grey-btn: #6C757D;
+}
+
 /* app__toolbar */
 .app__toolbar {
-
+    background-color: white;
 }
 
 
@@ -44,6 +52,12 @@ figure > img {
     display: flex;
 }
 
+
+/* app__sidebar */
+.app__sidebar {
+    background-color: var(--d-blue);
+    width: 68px;
+}
 
 
 /* DEBUG */
