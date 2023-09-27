@@ -11,9 +11,10 @@ a {
 }
 
 ul,
-ol,
-menu {
+ol {
 	list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -40,28 +41,50 @@ figure > img {
     --grey-btn: #6C757D;
 }
 
-/* app__toolbar */
-.app__toolbar {
-    background-color: white;
+
+.app__toolbar,
+.app__content,
+.app__sidebar {
+    overflow: hidden;
 }
 
+.app__toolbar {
+    background-color: white;
+    height: 70px;
+}
 
-/* app__content */
 .app__content {
-    overflow: hidden;
+    background-color: var(--grey-bg);
     display: flex;
 }
 
-
-/* app__sidebar */
 .app__sidebar {
+    color: white;
     background-color: var(--d-blue);
     width: 68px;
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 
+
+/* responsive-item */
+.responsive-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 16px;
+}
+
+.responsive-item .item__text {
+	display: none;
+}
+
+
+
 /* DEBUG */
-#app {
+/* #app {
     background-color: aqua;
     padding: 10px;
 }
@@ -76,4 +99,4 @@ figure > img {
 .debug .app__main-content {
 	border: 2px solid violet;
 	padding: 10px;
-}
+} */

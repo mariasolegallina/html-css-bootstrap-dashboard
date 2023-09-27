@@ -2,14 +2,24 @@
 @media (min-width: 576px) { ... }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
     .app__sidebar {
         width: 150px;
     }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+    .responsive-item .item__text {
+        display: block;
+    }
+    
+    .responsive-item {
+        justify-content: flex-start;
+        padding-left: var(--sidebar-pl, 20px);
+        padding-right: var(--sidebar-pl, 20px);
+    }
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
