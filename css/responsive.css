@@ -14,8 +14,17 @@
         width: 150px;
     }
 
-    .responsive-item .item__text {
+    .responsive-item .item__text,
+    .logo-lg {
         display: block;
+    }
+
+    .app__toolbar {
+        padding-left: 20px;
+    }
+
+    .logo-sm {
+        display: none;
     }
     
     .responsive-item {
