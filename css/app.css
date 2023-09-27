@@ -122,6 +122,12 @@ figure > img {
 	display: none;
 }
 
+.blue-bar {
+    background-color: var(--l-blue);
+    color: white;
+    padding: 14px;
+}
+
 
 
 /* DEBUG */
@@ -141,3 +147,8 @@ figure > img {
 	border: 2px solid violet;
 	padding: 10px;
 } */
+
+.debug .row > * {
+	border: 2px solid violet;
+	padding: 10px;
+}
