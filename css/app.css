@@ -36,6 +36,7 @@ figure > img {
 :root {
     --d-blue: #051E34;
     --l-blue: #1B72E8;
+    --blue-badge: #165BBA;
     --grey-bg: #F7F7F7;
     --greytxt: #393939;
     --grey-btn: #6C757D;
@@ -48,6 +49,7 @@ figure > img {
     align-items: center;
 }
 
+/* app__toolbar + app__sidebar */
 
 .app__toolbar,
 .app__content,
@@ -80,14 +82,18 @@ figure > img {
     background-color: var(--d-blue);
     background-image: url(../img/sidebar-bg.png);
     width: 68px;
-    padding: 30px 20px;
+    padding: 30px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.side-menu .menu__item:not(:last-child) {
-    margin-bottom: 15px;
+.side-menu .menu__item {
+    padding: 10px;
+}
+
+.side-menu .menu__item:hover {
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
 .responsive-item {
@@ -112,20 +118,39 @@ figure > img {
     align-items: center;
 }
 
+.tm-responsive {
+    color: var(--grey-btn);
+}
+
 .bell {
     color: var(--orange);
 }
 
-.responsive-item .item__text,
-.logo-lg,
-.tm-responsive {
-	display: none;
-}
+/* app__main-content */
 
 .blue-bar {
     background-color: var(--l-blue);
     color: white;
     padding: 14px;
+}
+
+.blue-badge {
+    display: inline-block;
+    background-color: var(--blue-badge);
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+}
+
+/* hide in xsmall view */
+.responsive-item .item__text,
+.logo-lg,
+.tm-responsive,
+.responsive-badge {
+	display: none;
 }
 
 

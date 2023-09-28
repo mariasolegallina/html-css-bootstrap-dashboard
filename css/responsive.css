@@ -10,25 +10,29 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .app__sidebar {
-        width: 150px;
-    }
-
+    /* display */
     .responsive-item .item__text,
     .logo-lg {
         display: block;
     }
-
-    .tm-responsive {
+    
+    .tm-responsive,
+    .responsive-badge {
         display: contents;
+    }
+    
+    /* hide */
+    .logo-sm,
+    .boolean-apps .plus {
+        display: none;
+    }
+    
+    .app__sidebar {
+        width: 150px;
     }
 
     .app__toolbar {
         padding-left: 20px;
-    }
-
-    .logo-sm {
-        display: none;
     }
     
     .responsive-item {
