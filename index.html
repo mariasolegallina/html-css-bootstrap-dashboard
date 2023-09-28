@@ -114,7 +114,36 @@
                     <div class="row align-items-start row-gap-2">
                         <div class="col-md-4 col-lg-2 d-flex justify-content-start align-items-center order-md-1">
                             <div class="fs-6 me-3">Nuovo studente</div>
-                            <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <div class="fs-6 offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <!-- offcanvas form -->
+                                <div class="offcanvas-body">
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </form>
+                                      
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-4 col-lg-6">
                             <div class="boolean-plan">
