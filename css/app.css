@@ -152,6 +152,10 @@ figure > img {
     text-align: center;
 }
 
+/* .prossime-classi tr:first-child {
+    width: 65%;
+} */
+
 .prossime-classi td {
     vertical-align: middle;
 }
