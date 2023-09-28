@@ -148,6 +148,10 @@ figure > img {
     border-radius: 999px;
 }
 
+.prossime-classi tr > *:not(:first-child){
+    text-align: center;
+}
+
 .prossime-classi td {
     vertical-align: middle;
 }
@@ -155,7 +159,7 @@ figure > img {
 .avatar {
     width: 30px;
     aspect-ratio: 1;
-	border-radius: 999px
+	border-radius: 999px;
 	overflow: hidden;
     margin-right: 10px;
     display: inline-block;
